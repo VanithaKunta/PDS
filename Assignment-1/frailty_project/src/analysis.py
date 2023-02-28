@@ -4,13 +4,13 @@ import scipy.stats as stats
 import matplotlib.pyplot as plt
 
 # Reading the clean_frailty_data csv file from the data_clean folder
-clean_frailty_data = pd.read_csv("/Users/vanithakunta/Desktop/PDS/Assignment-1/frailty_project/data_raw/raw_frailty_data.csv")
+clean_frailty_data = pd.read_csv("/Users/vanithakunta/Desktop/PDS/Assignment-1/frailty_project/data_clean/clean_frailty_data.csv")
 
 # Split data into two groups based on frailty status
 frailty_y = clean_frailty_data[clean_frailty_data['Frailty'] == 'Y']['Age']
 frailty_n = clean_frailty_data[clean_frailty_data['Frailty'] == 'N']['Age']
 
-# Perform t-test
+# Perform Welch Two Sample t-test of age by frailty
 t_stat, p_val = stats.ttest_ind(frailty_y, frailty_n, equal_var=False)
 
 # Save results to welch_ttest_results text file in results folder
