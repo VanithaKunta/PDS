@@ -10,6 +10,9 @@
 
 <b>Histogram</b>: With the help of this visualization, it is now easier to see how math results are distributed throughout the dataset. The vast majority of the results, which fall between 60 and 80, show that the distribution is largely typical.
 
+#### Notes: 
+The given data does not have any missing values or unusual values. So the data is good for processing. So I'm using the same raw data for further analysis without any further data cleaning.
+
 ### Folder structure:
 ```
 student_performance/
