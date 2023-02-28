@@ -29,11 +29,11 @@ plt.title('Histogram of Grip Strength')
 
 # Save histogram as PNG file
 plt.savefig('/Users/vanithakunta/Desktop/PDS/Assignment-1/frailty_project/results/histogram.png')
+plt.show()
 
 
 # Create box plot of grip_strength by frailty
 clean_frailty_data.boxplot(column='Grip strength', by='Frailty')
-
 # Add labels and title
 plt.xlabel('Frailty Status')
 plt.ylabel('Grip Strength')
@@ -41,3 +41,4 @@ plt.title('Box Plot of Grip Strength by Frailty Status')
 
 # Save box plot as PNG file
 plt.savefig('/Users/vanithakunta/Desktop/PDS/Assignment-1/frailty_project/results/boxplot.png')
+plt.show()
